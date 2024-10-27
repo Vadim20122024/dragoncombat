@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.app{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.app_display{
+    width: 500px;
+    height: 900px;
+    border-radius: 50px;
+    background-color: #212429ab;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+
+
+.display_header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.display_header_name{
+    align-self: center;
+}
+
+.display_header_other{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.display_main{
+    width: 100%;
+    height: 80%;
+    border-radius: 15px 15px 0px 0px;
+    border-top: 3px solid red;
+    box-shadow: 0px -25px 150px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body{
+    margin: 0;
+}
+
+
+.greating{
+    width: 100vw;
+    height: 100vh;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     animation: greating 6s 1;
+}
+
+.display_nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11px;
+}
+
+.display_nav div{
+    width: 117px;
+    height: 50px;
+    background-color: #32363C;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.display_wallet img{
+   width: 60px;
+}
+
+.display_wallet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#wallet_coin{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.display_progress{
+    color: white;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level_bar{
+    width: 368px;
+    height: 9px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.level_progress{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(120deg,#ff0000,#ffd000,#ff3c00);
+    transition: all 2s ease;
+}
+
+.display_tap{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 10px solid rgb(97, 0, 0);
+    background: radial-gradient(rgb(255, 134, 78),rgb(250, 104, 85),rgb(255, 0, 0));
+}
+
+
+.display_tap img{
+    width: 200px;
+}
+
+
+.display_energy{
+    font-size: 11px;
+    color: white;
+    margin: 0 auto;
+}
+
+.display_energy img{
+    width: 10px;
+}
+
+
+.display_footer{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    color: white;
+    font-size: 11px;
+    align-items: center;
+    background-color: #32363C;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*Модификаторы*/
+
+.tap_mod{
+    transform: skew(1deg);
+}
+
+
+.money{
+    width: 50px;
+    animation: moneyTap 1s 1;
+    position: absolute;
+}
+
+@media  screen and (max-width: 345px){
+
+    .app_display{
+        width: 1px;
+        height: 90vh;
+    }
+}
+    
+@media screen and (max-width: 361px){
+   
+    .app_display{
+        width: 350px;
+        height: 90vh;
+    }
+
+    .display_nav{
+        width: 350px;
+        height: 100px;
+        font-size: 10px;
+    }
+ 
+    .display_nav div{
+        width: 100px;
+        height: 40px;
+    }
+
+
+
+    .display_wallet img{
+        width: 40px;
+     }
+     
+     .display_wallet{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+     }
+
+     #wallet_coin{
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    .level_bar{
+        width: 330px;
+        height: 5px;
+        border-radius: 30px;
+        border: 1px solid gray;
+        overflow: hidden;
+    }
+
+
+    .display_tap{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid rgb(97, 0, 0);
+        background: radial-gradient(rgb(255, 134, 78),rgb(250, 104, 85),rgb(255, 0, 0));
+    }
+
+    .display_tap img{
+        width: 150px;
+    }
+
+
+    .display_footer{
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        color: white;
+        font-size: 11px;
+        align-items: center;
+        background-color: #32363C;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+
+
+} 
+
+@media screen and (max-width: 376px){
+   
+    .app_display{
+        width: 350px;
+         height:90vh ;
+     
+    }
+
+
+
+    .display_nav{
+        width: 350px;
+        height: 100px;
+        font-size: 10px;
+    }
+ 
+    .display_nav div{
+        width: 100px;
+        height: 40px;
+    }
+
+
+
+    .display_wallet img{
+        width: 40px;
+     }
+     
+     .display_wallet{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+     }
+
+     #wallet_coin{
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    .level_bar{
+        width: 330px;
+        height: 5px;
+        border-radius: 30px;
+        border: 1px solid gray;
+        overflow: hidden;
+    }
+
+
+    .display_tap{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 10px solid rgb(97, 0, 0);
+        background: radial-gradient(rgb(255, 134, 78),rgb(250, 104, 85),rgb(255, 0, 0));
+    }
+
+    .display_tap img{
+        width: 200px;
+    }
+
+
+    .display_footer{
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        color: white;
+        font-size: 11px;
+        align-items: center;
+        background-color: #32363C;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 391px){
+    .app_display{
+        width: 380px;
+        height: 90vh ;
+    }
+}
+
+@media screen and (max-width: 413px){
+    .app_display{
+        width: 400px;
+        height: 90vh;
+    }
+
+    .display_footer{
+        width: 425px;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        color: white;
+        font-size: 11px;
+        align-items: center;
+        background-color: #32363C;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 415px){
+
+    .app_display{
+        width: 400px;
+        height: 90vh ;
+    }
+   
+    .display_footer{
+        width: 400px;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        color: white;
+        font-size: 11px;
+        align-items: center;
+        background-color: #32363C;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width: 431px){
+    .app_display{
+        width: 425px;
+        height: 90vh;
+    }
+
+    .display_footer{
+        width: 425px;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        color: white;
+        font-size: 11px;
+        align-items: center;
+        background-color: #32363C;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+     .app_display{
+        width: 580px;
+        height: 99vh ;
+     }
+
+     .display_tap{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 10px solid rgb(97, 0, 0);
+        background: radial-gradient(rgb(255, 134, 78),rgb(250, 104, 85),rgb(255, 0, 0));
+    }
+
+    .display_tap img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .app_display{
+        width: 90vh;
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .app_display{
+        width: 90vh;
+        height: 100vh;
+    }
+
+    .display_tap{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 10px solid rgb(97, 0, 0);
+        background: radial-gradient(rgb(255, 134, 78),rgb(250, 104, 85),rgb(255, 0, 0));
+    }
+    
+    
+    .display_tap img{
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes moneyTap{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-60px);
+        opacity: 0;}
+    
+    }
+
+
+
+
+
+
+
+@keyframes greating{
+     0%{
+        opacity: 0;
+     }
+     50%{
+        opacity: 1;
+     }
+      100%{
+         opacity: 0;
+      }
+}
