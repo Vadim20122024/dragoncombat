@@ -5,7 +5,14 @@ const wallet = document.querySelector('#wallet_coin');
 const hamster = document.querySelector('.display_tap');
 const energy = document.querySelector('#energy');
 const lvlProgress = document.querySelector('.level_progress');
-const level = document.querySelector('#level')
+const level = document.querySelector('#level');
+const nav_mine = document.querySelector('.display_footer_mine');
+const display_content = document.querySelector('.display_content');
+const mine_content = document.querySelector('.mine_content');
+const nav_game = document.querySelector('.display_footer_exchange');
+
+
+
 
 
 //DB База данных
@@ -24,7 +31,7 @@ function handleGreeting(){
 
   let div = document.createElement('div');
   let img = document.createElement('img');
-  img.src = '../img/hamster-poster.png';
+  img.src = './img/hamster-poster.png';
   div.classList.add('greating');
 
   div.appendChild(img);
@@ -55,7 +62,7 @@ function handleTap(e){
 
 
   const money = document.createElement('img')
-  money.src = '../img/HMSTR.png';
+  money.src = './img/HMSTR.png';
   money.classList.add('money');
 
   app.appendChild(money);
@@ -112,7 +119,18 @@ function energyRecovery(){
 
 }
 
+function changeToMenu(){
+  mine_content.style.display = 'flex';
+  display_content.style.display = 'none';
+  
 
+}
+
+
+function changeToGame(){
+  mine_content.style.display = 'none';
+  display_content.style.display = 'flex';
+}
 
 
 
@@ -138,3 +156,5 @@ energyRecovery();
 //События
 
 hamster.addEventListener('click',handleTap)
+nav_mine.addEventListener('click',changeToMenu)
+nav_game.addEventListener('click',changeToGame)
